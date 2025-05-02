@@ -20,7 +20,7 @@ return [
     ],
     'about-me' => [
         'title' => 'About me',
-        'content' => 'Hello, my name is Cas Rovers and I’m 19 years old. I’m a passionate software development student from the Netherlands, currently studying at Koning Willem 1 College in Cuijk. I’ve always had an interest in IT, and when I discovered software development, I immediately knew it was the right path for me. That’s why I decided to apply for the program at Koning Willem 1 College. Outside of school I enjoy gaming with friends, learning new programming techniques and working on side projects to sharpen my skills.',
+        'content' => 'Hello, my name is Cas Rovers, and I\'m 19 years old. I\'m an enthusiastic Software Development student at Koning Willem 1 College in Cuijk. My interest in IT quickly led me to software development; I knew immediately it was a great fit for me. That\'s why I\'m now pursuing this program. Outside of my studies, I enjoy gaming with friends, delving into new programming techniques, and working on my own projects to further develop my skills.',
         'buttons' => [
             'projects' => [
                 'label' => 'View my work',
@@ -28,8 +28,9 @@ return [
             ],
         ],
         'images' => [
-            'pets' => [
-                'alt' => "A picture of my pets.",
+            'moon' => [
+                'alt' => 'This is a photograph I captured of the moon\'s craters.',
+                'caption' => 'This is a photograph I captured of the moon\'s craters.'
             ],
         ],
     ],
@@ -39,11 +40,16 @@ return [
     ],
     'contact' => [
         'title' => 'Get in touch',
-        'subtitle' => 'Feel free to reach out via email or phone.',
+        'subtitle' => 'Feel free to reach out via email.',
         'images' => [
             'person' => [
                 'alt' => 'A picture of :name.',
             ]
         ]
+    ],
+    'meta' => [
+        'title' => 'Homepage',
+        'description' => 'Welcome to my homepage! I am a student software developer from the Netherlands, passionate about web development and technology.',
+        'keywords' => 'homepage, student, software developer, web development, technology',
     ],
 ];

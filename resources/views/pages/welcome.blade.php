@@ -1,5 +1,12 @@
 @extends('layouts.guest')
 
+@section('meta')
+    <meta name="description" content="{{ __('homepage.meta.description') }}">
+    <meta name="keywords" content="{{ __('homepage.meta.keywords') }}">
+    <meta name="author" content="{{ __('homepage.meta.author') }}">
+    <meta name="robots" content="index, follow">
+@endsection
+
 @section('content')
     {{-- Greetings --}}
     <section class="dark:bg-transparent">
@@ -27,7 +34,7 @@
                             </a>
                         </div>
                     </div>
-                    <img src="{{ $personImage }}"
+                    <img src="{{ asset('media/images/Person.webp') }}"
                         alt="{{ __('homepage.introduction.images.person.alt', ['name' => 'Cas Rovers']) }}"
                         class="absolute inset-0 z-0 ml-auto h-full rounded-md"
                         aria-label="{{ __('homepage.introduction.images.person.alt', ['name' => 'Cas Rovers']) }}">
@@ -45,8 +52,6 @@
             </div>
         </div>
     </section>
-
-
 
     {{-- About me --}}
     <section class="bg-slate-100 py-16 dark:bg-slate-800">
@@ -69,9 +74,15 @@
                     </a>
                 </div>
                 <div>
-                    <img src="https://placehold.co/600x400" alt="{{ __('homepage.about-me.images.pets.alt') }}"
-                        class="h-auto w-full rounded-lg shadow-lg"
-                        aria-label="{{ __('homepage.about-me.images.pets.alt') }}">
+                    <figure class="mx-auto block max-w-md">
+                        <img src="{{ asset('media/images/Moon-craters.webp') }}"
+                            alt="{{ __('homepage.about-me.images.moon.alt') }}"
+                            class="block h-auto w-full rounded-lg shadow-lg"
+                            aria-label="{{ __('homepage.about-me.images.moon.alt') }}">
+                        <figcaption class="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">
+                            {{ __('homepage.about-me.images.moon.caption') }}
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
@@ -107,7 +118,7 @@
         <div class="container mx-auto px-6 md:px-12 lg:px-20">
             <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
                 <div>
-                    <img src="https://placehold.co/600x400"
+                    <img src="{{ asset('media/images/VW-Kever.webp') }}"
                         alt="{{ __('homepage.contact.images.person.alt', ['name' => 'Cas Rovers']) }}"
                         class="h-auto w-full rounded-lg shadow-lg dark:shadow-gray-700/50"
                         aria-label="{{ __('homepage.contact.images.person.alt', ['name' => 'Cas Rovers']) }}">
@@ -123,16 +134,16 @@
                         {{ __('homepage.contact.subtitle') }}
                     </p>
                     <div class="flex flex-col gap-4 text-lg text-gray-700 dark:text-gray-300">
-                        <a href="mailto:contact@example.com"
+                        <a href="mailto:casrovers@outlook.com"
                             class="flex w-fit items-center gap-3 transition-colors hover:text-indigo-600">
                             <i class="fas fa-envelope text-xl"></i>
-                            contact@example.nl
+                            casrovers@outlook.com
                         </a>
-                        <a href="tel:+1234567890"
+                        {{-- <a href="tel:+31624737066"
                             class="flex w-fit items-center gap-3 transition-colors hover:text-indigo-600">
                             <i class="fas fa-phone text-xl"></i>
-                            +31 6 12345678
-                        </a>
+                            +31 6 24737066
+                        </a> --}}
                     </div>
                 </div>
             </div>

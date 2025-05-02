@@ -24,7 +24,7 @@ class StoreProjectRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => ['required', 'string', 'max:255'],
+            'title' => ['required', 'string', 'max:255', 'unique:projects,title'],
             'description' => ['required', 'string'],
             'category' => ['required', Rule::in(ProjectCategories::values())],
             'is_published' => ['required', 'boolean'],

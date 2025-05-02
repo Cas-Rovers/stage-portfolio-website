@@ -33,7 +33,7 @@
                 x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1"
                 class="absolute right-0 top-12 z-50 w-48 rounded-md border border-gray-100 bg-white py-2 shadow-lg ring-1 ring-black/5 dark:border-gray-700 dark:bg-gray-800 dark:ring-white/10">
 
-                <a href="#"
+                <a href="{{ route('admin.profile.index') }}"
                     class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700">
                     <i class="fas fa-user mr-2 w-4"></i>
                     {{ __('top-nav.links.profile') }}

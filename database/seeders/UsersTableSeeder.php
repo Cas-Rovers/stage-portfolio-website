@@ -18,7 +18,7 @@ class UsersTableSeeder extends Seeder
         User::factory()->create([
             'first_name' => 'Cas',
             'last_name' => 'Rovers',
-            'email' => 'cas@wux.nl',
+            'email' => 'casrovers@outlook.com',
             'is_active' => true
         ])->assignRole(SystemRoles::SUPER_ADMIN->value);
 

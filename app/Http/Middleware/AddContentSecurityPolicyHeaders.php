@@ -16,8 +16,10 @@ class AddContentSecurityPolicyHeaders
     public function handle(Request $request, Closure $next): Response
     {
         $response = $next($request);
-        $response->headers->set('Content-Security-Policy', "block-all-mixed-content; script-src 'self' 'unsafe-inline' 'unsafe-eval'; object-src 'self'; base-uri 'self'; frame-ancestors 'none';");
-        if (app()->environment('production')) {
+        if (app()->isProduction()) {
+            $response->headers->set('Content-Security-Policy', "block-all-mixed-content; script-src 'self' 'unsafe-inline' 'unsafe-eval'; object-src 'self'; base-uri 'self'; frame-ancestors 'none';");
+        }
+        if (app()->isProduction()) {
             $response->headers->set('Strict-Transport-Security', 'max-age=63072000; includeSubDomains; preload');
         }
         $response->headers->set('X-Frame-Options', 'DENY');

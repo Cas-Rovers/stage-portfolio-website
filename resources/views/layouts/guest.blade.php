@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf_token" content="{{ csrf_token() }}">
     <title>@yield('title', config('app.name'))</title>
+    @yield('meta')
     @vite(['resources/assets/frontend/css/app.css'])
     @livewireStyles()
 </head>

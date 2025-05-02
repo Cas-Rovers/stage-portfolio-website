@@ -24,7 +24,7 @@ class UpdateProjectRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => ['required', 'string', 'max:255'],
+            'title' => ['required', 'string', 'max:255', Rule::unique('projects', 'title')->ignore($this->route('project')->id)],
             'description' => ['required', 'string'],
             'category' => ['required', Rule::in(ProjectCategories::values())],
             'is_published' => ['required', 'boolean'],

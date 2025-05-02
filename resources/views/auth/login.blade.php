@@ -33,6 +33,15 @@
                     @enderror
                 </div>
 
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" id="remember-me" name="remember" value="1"
+                        {{ old('remember') ? 'checked' : '' }}
+                        aria-label="{{ __('login.inputs.remember-me.aria_label') }}">
+                    <label for="remember-me" class="text-sm text-gray-700">
+                        {{ __('login.inputs.remember-me.label') }}
+                    </label>
+                </div>
+
                 <button type="submit" aria-label="{{ __('login.actions.submit.aria_label') }}"
                     class="w-full cursor-pointer rounded-md bg-blue-600 py-2 font-medium text-white transition-colors hover:bg-blue-700">
                     {{ __('login.actions.submit.content') }}

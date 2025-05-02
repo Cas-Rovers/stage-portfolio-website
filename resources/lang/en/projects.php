@@ -25,6 +25,9 @@ return [
         'go-back' => 'Go back to projects',
     ],
     'admin' => [
+        'index' => [
+            'title' => 'Projects',
+        ],
         'create' => [
             'title' => 'Create Project',
         ],
@@ -40,5 +43,10 @@ return [
         'edit' => [
             'heading' => 'Edit :project'
         ]
-    ]
+    ],
+    'meta' => [
+        'title' => 'Projects',
+        'description' => 'Explore my projects and portfolio showcasing my work and expertise.',
+        'keywords' => 'projects, portfolio',
+    ],
 ];

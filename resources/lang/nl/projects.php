@@ -37,5 +37,10 @@ return [
         'gallery' => 'Galerij',
         'back-to-projects' => 'Terug naar projecten',
         'save' => 'Project opslaan',
-    ]
+    ],
+    'meta' => [
+        'title' => 'Projecten',
+        'description' => 'Verken mijn projecten en portfolio die mijn werk en expertise tonen.',
+        'keywords' => 'projects, portfolio',
+    ],
 ];

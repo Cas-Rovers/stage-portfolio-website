@@ -1,5 +1,12 @@
 @extends('layouts.guest')
 
+@section('meta')
+    <meta name="description" content="{{ __('projects.meta.description') }}">
+    <meta name="keywords" content="{{ __('projects.meta.keywords') }}">
+    <meta name="author" content="{{ __('projects.meta.author') }}">
+    <meta name="robots" content="index, follow">
+@endsection
+
 @section('title', __('projects.title'))
 
 @section('content')

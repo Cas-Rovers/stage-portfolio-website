@@ -1,5 +1,9 @@
 @extends('layouts.guest')
 
+@section('meta')
+    <meta name="robots" content="index, follow">
+@endsection
+
 @section('title', $project->title)
 
 @section('content')

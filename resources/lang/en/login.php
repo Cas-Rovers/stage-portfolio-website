@@ -13,6 +13,10 @@ return [
             'placeholder' => 'Enter your password here...',
             'aria_label' => 'The field to enter your password.',
         ],
+        'remember-me' => [
+            'label' => 'Remember me',
+            'aria_label' => 'Checkbox to remember the user.',
+        ],
     ],
     'actions' => [
         'submit' => [

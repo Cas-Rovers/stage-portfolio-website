@@ -20,7 +20,7 @@ return [
     ],
     'about-me' => [
         'title' => 'Over mij',
-        'content' => 'Hallo, mijn naam is Cas Rovers en ik ben 19 jaar oud. Ik ben een gepassioneerde student softwareontwikkeling uit Nederland, momenteel studerend aan het Koning Willem 1 College in Cuijk. Ik heb altijd al interesse gehad in IT, en toen ik softwareontwikkeling ontdekte, wist ik meteen dat dit de juiste weg voor mij was. Daarom besloot ik me in te schrijven voor de opleiding aan het Koning Willem 1 College. Buiten school om geniet ik van gamen met vrienden, het leren van nieuwe programmeertechnieken en het werken aan zijprojecten om mijn vaardigheden te verbeteren.',
+        'content' => 'Hallo, mijn naam is Cas Rovers, 19 jaar oud en een enthousiaste student Softwareontwikkeling aan het Koning Willem 1 College in Cuijk. Mijn interesse in IT leidde me al snel naar softwareontwikkeling; ik wist meteen dat dit bij mij paste. Daarom volg ik nu deze opleiding. Naast mijn studie game ik graag met vrienden, verdiep ik me in nieuwe programmeertechnieken en werk ik aan eigen projecten om mijn vaardigheden verder te ontwikkelen.',
         'buttons' => [
             'projects' => [
                 'label' => 'Bekijk mijn werk',
@@ -28,8 +28,9 @@ return [
             ],
         ],
         'images' => [
-            'pets' => [
-                'alt' => "Een foto van mijn huisdieren.",
+            'moon' => [
+                'alt' => 'Dit is een foto die ik heb gemaakt van de maankraters.',
+                'caption' => 'Dit is een foto die ik heb gemaakt van de maankraters.'
             ],
         ],
     ],
@@ -45,5 +46,10 @@ return [
                 'alt' => 'Een foto van :name.',
             ]
         ]
+    ],
+    'meta' => [
+        'title' => 'Homepagina',
+        'description' => 'Welkom op mijn homepage! Ik ben een student softwareontwikkelaar uit Nederland, gepassioneerd door webontwikkeling en technologie.',
+        'keywords' => 'homepage, student, software developer, web development, technology',
     ],
 ];

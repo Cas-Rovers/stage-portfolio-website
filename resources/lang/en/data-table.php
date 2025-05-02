@@ -17,4 +17,5 @@ return [
         'is_published' => 'Published',
         'published_at' => 'Published at',
     ],
+    'delete-confirmation' => 'Are you sure you want to delete this record?',
 ];

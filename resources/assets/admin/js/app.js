@@ -49,5 +49,8 @@ tinymce.init({
     toolbar_mode: 'sliding',
     skin: isDarkMode ? 'oxide-dark' : 'oxide',
     content_css: isDarkMode ? 'dark' : 'default',
+    promotion: false,
+    branding: false,
+    statusbar: true,
     license_key: 'gpl'
 });

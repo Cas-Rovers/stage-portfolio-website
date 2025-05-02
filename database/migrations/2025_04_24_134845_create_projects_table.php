@@ -14,7 +14,7 @@ return new class extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('title')->unique();
             $table->longText('description');
             $table->string('slug')->unique();
             $table->enum('category', ProjectCategories::values())->default(ProjectCategories::FULLSTACK->value);

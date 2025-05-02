@@ -9,9 +9,13 @@ return [
             'aria_label' => 'Het veld om uw e-mail adres in te vullen.',
         ],
         'password' => [
-            'label' => 'Password',
+            'label' => 'Wachtwoord',
             'placeholder' => 'vul hier uw wachtwoord in...',
-            'aria_label' => 'Het veld om uw wachtwoord in te vullen',
+            'aria_label' => 'Het veld om uw wachtwoord in te vullen.',
+        ],
+        'remember-me' => [
+            'label' => 'Ontoud mij',
+            'aria_label' => 'Checkbox om de gebruiker te onthouden.',
         ],
     ],
     'actions' => [

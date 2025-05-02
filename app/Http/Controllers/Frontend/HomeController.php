@@ -19,10 +19,8 @@ class HomeController extends Controller
     public function home(): View|Factory|Application
     {
         $skills = Skill::get(['id', 'name', 'icon_data']);
-        $personImage = Vite::asset('resources/assets/frontend/media/images/Person.png');
         return view('pages.welcome', [
             'skills' => $skills,
-            'personImage' => $personImage,
         ]);
     }
 }
