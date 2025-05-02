@@ -20,7 +20,7 @@ return [
     ],
     'about-me' => [
         'title' => 'Over mij',
-        'content' => 'Hallo, mijn naam is Cas Rovers, 19 jaar oud en een enthousiaste student Softwareontwikkeling aan het Koning Willem 1 College in Cuijk. Mijn interesse in IT leidde me al snel naar softwareontwikkeling; ik wist meteen dat dit bij mij paste. Daarom volg ik nu deze opleiding. Naast mijn studie game ik graag met vrienden, verdiep ik me in nieuwe programmeertechnieken en werk ik aan eigen projecten om mijn vaardigheden verder te ontwikkelen.',
+        'content' => 'Hallo, mijn naam is Cas Rovers, :age jaar oud en een enthousiaste student Softwareontwikkeling aan het :college in :college-location. Mijn interesse in IT leidde me al snel naar softwareontwikkeling; ik wist meteen dat dit bij mij paste. Daarom volg ik nu deze opleiding. Naast mijn studie game ik graag met vrienden, verdiep ik me in nieuwe programmeertechnieken en werk ik aan eigen projecten om mijn vaardigheden verder te ontwikkelen.',
         'buttons' => [
             'projects' => [
                 'label' => 'Bekijk mijn werk',
@@ -40,7 +40,7 @@ return [
     ],
     'contact' => [
         'title' => 'Neem contact op',
-        'subtitle' => 'Voel je vrij om contact op te nemen via e-mail of telefoon.',
+        'subtitle' => 'Voel je vrij om contact op te nemen via e-mail.',
         'images' => [
             'person' => [
                 'alt' => 'Een foto van :name.',

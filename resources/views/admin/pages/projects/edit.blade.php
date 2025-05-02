@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', __('projects.admin.edit.title'))
+@section('title', __('projects.admin.edit.title', ['project' => $project->title]))
 
 @section('content')
     <div class="mx-auto max-w-4xl rounded-lg bg-white p-6 shadow-md">

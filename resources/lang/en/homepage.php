@@ -20,7 +20,7 @@ return [
     ],
     'about-me' => [
         'title' => 'About me',
-        'content' => 'Hello, my name is Cas Rovers, and I\'m 19 years old. I\'m an enthusiastic Software Development student at Koning Willem 1 College in Cuijk. My interest in IT quickly led me to software development; I knew immediately it was a great fit for me. That\'s why I\'m now pursuing this program. Outside of my studies, I enjoy gaming with friends, delving into new programming techniques, and working on my own projects to further develop my skills.',
+        'content' => 'Hello, my name is Cas Rovers, and I\'m :age years old. I\'m an enthusiastic Software Development student at :college in :college-location. My interest in IT quickly led me to software development; I knew immediately it was a great fit for me. That\'s why I\'m now pursuing this program. Outside of my studies, I enjoy gaming with friends, delving into new programming techniques, and working on my own projects to further develop my skills.',
         'buttons' => [
             'projects' => [
                 'label' => 'View my work',

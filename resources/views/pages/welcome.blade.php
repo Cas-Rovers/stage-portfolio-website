@@ -65,7 +65,7 @@
                         <span class="devider h-[10px] w-[10%] bg-indigo-500"></span>
                     </div>
                     <p class="mb-4 text-lg text-gray-700 dark:text-gray-300">
-                        {{ __('homepage.about-me.content') }}
+                        {{ __('homepage.about-me.content', $aboutMeData) }}
                     </p>
                     <a href="{{ route('projects.index') }}"
                         class="mt-6 inline-block rounded bg-indigo-600 px-6 py-3 font-semibold text-white transition hover:bg-indigo-500"

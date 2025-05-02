@@ -41,8 +41,9 @@ return [
         'back-to-projects' => 'Back to Projects',
         'save' => 'Save Project',
         'edit' => [
-            'heading' => 'Edit :project'
-        ]
+            'title' => 'Edit :project',
+            'heading' => 'Edit :project',
+        ],
     ],
     'meta' => [
         'title' => 'Projects',

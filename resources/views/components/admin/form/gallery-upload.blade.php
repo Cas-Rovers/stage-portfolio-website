@@ -18,7 +18,7 @@
                 <span class="font-semibold">Click to upload</span>
                 or drag and drop multiple images
             </p>
-            <p class="text-xs text-gray-500">JPG, JPEG, PNG, BPM, GIF, WEBP or SVG (Max: 2MB each)</p>
+            <p class="text-xs text-gray-500">JPG, JPEG, PNG, BPM, GIF, WEBP (Max: 2MB each)</p>
         </label>
         <input id="{{ $id }}" type="file" name="{{ $name }}" accept="{{ $accept }}"
             class="hidden" multiple />

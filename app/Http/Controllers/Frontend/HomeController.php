@@ -7,6 +7,7 @@ use App\Models\Skill;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Vite;
 
 class HomeController extends Controller
@@ -19,8 +20,17 @@ class HomeController extends Controller
     public function home(): View|Factory|Application
     {
         $skills = Skill::get(['id', 'name', 'icon_data']);
+
+        $birthdate = Carbon::create(2005, 10, 23);
+        $aboutMeData = [
+            'age' => $birthdate->age, // dynamic age from birthdate
+            'college' => 'Koning Willem 1 College',
+            'college-location' => 'Cuijk',
+        ];
+
         return view('pages.welcome', [
             'skills' => $skills,
+            'aboutMeData' => $aboutMeData,
         ]);
     }
 }

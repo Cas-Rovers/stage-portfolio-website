@@ -30,9 +30,9 @@ class StoreProjectRequest extends FormRequest
             'is_published' => ['required', 'boolean'],
             'tags' => ['required', 'array'],
             'tags.*' => ['exists:tags,id'],
-            'main_image' => ['nullable', 'mimetypes:image/jpg,image/jpeg,image/png,image/webp,image/svg+xml,image/gif,image/bmp,image/tiff,image/heif,image/heic', 'max:2048'],
+            'main_image' => ['nullable', 'image', 'image:allow_svg', 'max:2048'],
             'gallery' => ['nullable', 'array'],
-            'gallery.*' => ['mimetypes:image/jpg,image/jpeg,image/png,image/webp,image/svg+xml,image/gif,image/bmp,image/tiff,image/heif,image/heic', 'max:2048'],
+            'gallery.*' => ['image', 'max:2048'],
         ];
     }
 }

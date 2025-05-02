@@ -17,9 +17,11 @@ class ProjectsView extends Component
     use WithPagination;
 
     public Collection $tags;
+    #[Url(as: 'category', keep: false)]
     public ?string $category = '';
     public array $categories = [];
     #[Url(as: 'tags', keep: false)]
+    public string $tagsQuery = '';
     public ?array $selectedTags = [];
     #[Url(as: 'search', keep: false)]
     public ?string $search = '';
@@ -28,6 +30,17 @@ class ProjectsView extends Component
     {
         $this->tags = Tag::pluck('name');
         $this->categories = ProjectCategories::values();
+    }
+
+    public function updatedSelectedTags(): void
+    {
+        $this->tagsQuery = implode(',', $this->selectedTags);
+        $this->resetPage();
+    }
+
+    public function updatedTagsQuery(): void
+    {
+        $this->selectedTags = array_filter(explode(',', $this->tagsQuery));
     }
 
     public function setCategory(string $category): void
