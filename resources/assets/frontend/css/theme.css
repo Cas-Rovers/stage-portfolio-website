@@ -1,0 +1,47 @@
+@theme {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --font-geist: "Geist", ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --color-midnight-50: oklch(95% 0.015 278);
+    --color-midnight-100: oklch(90% 0.025 278);
+    --color-midnight-200: oklch(80% 0.035 278);
+    --color-midnight-300: oklch(70% 0.045 278);
+    --color-midnight-400: oklch(60% 0.055 278);
+    --color-midnight-500: oklch(50% 0.065 278);
+    --color-midnight-600: oklch(40% 0.075 278);
+    --color-midnight-700: oklch(30% 0.085 278);
+    --color-midnight-800: oklch(20% 0.095 278);
+    --color-midnight-900: oklch(10% 0.105 278);
+    --color-midnight-950: oklch(5% 0.105 278);
+
+
+
+
+    --animate-fade-in: fade-in 0.3s ease-in-out;
+    --animate-pulsing: pulse 0.4s ease-in-out;
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes pulse {
+
+        0%,
+        100% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+    }
+}

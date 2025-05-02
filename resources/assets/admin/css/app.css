@@ -1,0 +1,14 @@
+@import '../../../../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
+@import '../../../../node_modules/tailwindcss';
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@layer theme, base, components, utilities;
+
+@import "./theme.css" layer(theme);
